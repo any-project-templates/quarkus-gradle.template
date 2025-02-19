@@ -5,4 +5,4 @@ compile:
 	./gradlew compileJava
 
 docker-build:
-	./gradlew modules:$module$:build
+	$quarkus_docker_build_command$
