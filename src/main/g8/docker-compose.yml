@@ -2,18 +2,13 @@ version: "3.5"
 
 services:
   application-worker:
-    image: temporal-local/worker:latest
-    depends_on:
-      - application-storage
-    environment:
-      - DATASOURCE_USERNAME=postgresql
-      - DATASOURCE_PASSWORD=postgresql
-      - DATASOURCE_JDBC_URL=jdbc:postgresql://application-storage:5432/postgresql
-      - TEMPORAL_HOST=temporal:7233
+    image: $organization$/$name$:latest
+    ports:
+      - "9090:9090"
     networks:
-      - temporal-network
+      - $name$-network
 
 networks:
-  temporal-network:
+  $name$-network:
     driver: bridge
-    name: temporal-network
+    name: $name$-network

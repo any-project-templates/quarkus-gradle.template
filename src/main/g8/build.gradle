@@ -5,8 +5,8 @@ plugins {
 }
 
 allprojects {
-    group 'org.example'
-    version '1.0-SNAPSHOT'
+    group '$organization$'
+    version '0.1.0'
 
     repositories {
         mavenCentral()
@@ -20,7 +20,7 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: "io.quarkus"
 
-    if (name == "temporal" || name == "storage") {
+    if (name != "$module$") {
         apply plugin: 'org.kordamp.gradle.jandex'
     }
 
