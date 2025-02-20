@@ -1,9 +1,6 @@
-*.class
-*.log
-.idea/
-.bsp/
-target/
+.gradle/
 build/
-.vscode/
-.metals/
-.bloop/
+target/
+*.iml
+.idea/
+.bsp

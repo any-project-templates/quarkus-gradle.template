@@ -5,4 +5,4 @@ compile:
 	./gradlew compileJava
 
 docker-build:
-	./gradlew build
+	./gradlew :modules:core:build

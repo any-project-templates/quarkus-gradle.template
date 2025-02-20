@@ -5,7 +5,7 @@ plugins {
 }
 
 allprojects {
-    group '$organization$'
+    group 'local'
     version '0.1.0'
 
     repositories {
@@ -20,7 +20,7 @@ subprojects {
     apply plugin: 'java-library'
     apply plugin: "io.quarkus"
 
-    if (name != "$module$") {
+    if (name != "core") {
         apply plugin: 'org.kordamp.gradle.jandex'
     }
 
@@ -30,7 +30,7 @@ subprojects {
     }
 
     dependencies {
-        implementation enforcedPlatform("\${quarkusPlatformGroupId}:\${quarkusPlatformArtifactId}:\${quarkusPlatformVersion}")
+        implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     }
 
     test {

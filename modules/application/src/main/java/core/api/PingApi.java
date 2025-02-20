@@ -1,4 +1,4 @@
-package $package$.api;
+package core.api;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;

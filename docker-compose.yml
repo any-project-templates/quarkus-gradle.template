@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  application:
+    image: local/application:latest
+    ports:
+      - "9090:9090"
+    networks:
+      - application-network
+
+networks:
+  application-network:
+    driver: bridge
+    name: application-network

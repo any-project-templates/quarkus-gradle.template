@@ -1,4 +1,4 @@
-package $package$.domain.ping;
+package core.domain.ping;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import org.jboss.logging.Logger;

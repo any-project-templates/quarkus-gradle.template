@@ -1,6 +1,11 @@
-# quarkus-gradle
-Basic Quarkus project template
-
+# Build & Run
 ```shell
-sbt new giter-templates/quarkus-gradle.g8
+make clean
+make docker-build
+
+# or using compose
+docker-compose up -d
 ```
+
+# Api
+- http://localhost:9090/docs/

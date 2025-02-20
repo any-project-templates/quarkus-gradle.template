@@ -1,4 +1,4 @@
-package $package$.infrastructure;
+package core.infrastructure;
 
 import jakarta.enterprise.context.Dependent;
 
