@@ -9,12 +9,14 @@ pluginManagement {
         id 'org.kordamp.gradle.jandex' version '1.0.0'
     }
 }
+
+// change it
 rootProject.name='application'
 
 include(
-        'modules:core'
+        'modules:application'
 )
 
-findProject(':modules:core')?.name = 'core'
+findProject(':modules:application')?.name = 'application'
 
 

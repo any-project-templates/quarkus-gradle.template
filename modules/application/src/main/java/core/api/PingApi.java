@@ -2,7 +2,7 @@ package core.api;
 
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
-import $package$.domain.ping.PingService;
+import core.domain.ping.PingService;
 
 @Path("api/v1")
 @Consumes(MediaType.APPLICATION_JSON)
